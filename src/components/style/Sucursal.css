@@ -1,0 +1,41 @@
+.mapa
+{
+position: relative;
+left: 50%;
+top: 70px; 
+width: 500px;
+height: 400px;
+}
+
+.informacion
+{
+position: relative;
+top: -250px;
+left: 10%;
+font-size: 20px;
+}
+
+#boton
+{
+width: 100%;
+}
+
+.ubicaciones
+{
+position: relative;
+left: 10%;
+top: 10%;        
+width: 80%;
+
+
+}
+
+.frailes
+{
+position: relative;
+align-items: center;
+justify-content: center;
+height: 60%;
+}
+
+
