@@ -13,12 +13,12 @@ export default function Routes() {
     
   <BrowserRouter>
     <Rutas>
-      <Route path='/' element={<Home/>} />
-      <Route path='/product' element={<Pproduct/>} />
-      <Route path='/QuienesSomos' element={<QuienesSomos/>} />
-      <Route path='/marcas' element={<Pmarcas/>} />
-      <Route path='/contacto' element={<Contacto/>} />
-      <Route path='/ubicacion' element={<Sucursal/>} />
+      <Route path='/.netlify/functions/api/' element={<Home/>} />
+      <Route path='/.netlify/functions/api/product' element={<Pproduct/>} />
+      <Route path='/.netlify/functions/api/QuienesSomos' element={<QuienesSomos/>} />
+      <Route path='/.netlify/functions/api/marcas' element={<Pmarcas/>} />
+      <Route path='/.netlify/functions/api/contacto' element={<Contacto/>} />
+      <Route path='/.netlify/functions/api/ubicacion' element={<Sucursal/>} />
     </Rutas>
   </BrowserRouter>
 
