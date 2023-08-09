@@ -1,0 +1,22 @@
+.spinner{
+border: 10px solid rgba(0,0,0,.1);
+width: 130px;
+height: 130px;
+border-radius: 70%;
+border-left-color: blue;
+
+
+animation: son .8s linear infinite;
+}
+
+
+
+@keyframes son {
+    0%{
+transform:rotate(0deg)
+}
+
+100%{
+transform: rotate(360deg);
+}
+}

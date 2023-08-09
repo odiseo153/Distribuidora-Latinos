@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.3.1",
+    "million": "^2.5.5",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.0",
     "react-router-dom": "^6.13.0"

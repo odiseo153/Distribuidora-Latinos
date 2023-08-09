@@ -1,89 +1,84 @@
-import React, { useEffect, useState } from 'react';
-import style from '../style/estilos.module.css'
-import  '../style/Pproduto.css'
+import { useState } from 'react';
+import '../style/Pproduto.css';
 import CategoriaProduct from './CategoriaProduct';
-
+import ProductData from '../Json_Data/Productos.json';
 
 export default function Pproduct() {
-  const [imagenes, setIma] = useState([]);
-  const [CantPro,setCant] = useState();
-  
-  const guardar = (datos) => {
-    const datosLimitados = datos.slice(0, 30);
-    setIma(datosLimitados);
+  const [imagenes, setIma] = useState(ProductData);
+  const [Orden, setOrden] = useState(0);
+
+  const compareByName = (a) => {
+console.log(a)
+    if (a === 'Nombre, A a Z') {
+      setOrden(-1);
+    }
+    if (a === 'Nombre, Z a A') {
+      setOrden(1);
+    }
+    // Puedes implementar más lógica para otros casos de ordenamiento aquí
   };
 
-  useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/photos')
-      .then((res) => res.json())
-      .then((re) => guardar(re));
-  }, []);
+  const customSort = (a, b) => {
+    if (Orden === -1) {
+      return a.nombre.localeCompare(b.nombre);
+    }
+    if (Orden === 1) {
+      return b.nombre.localeCompare(a.nombre);
+    }
+    // Implementa otras condiciones de ordenamiento aquí
+    return 0;
+  };
 
-   return (
-<div>
+  // Ordenar el array de imágenes utilizando la función de comparación personalizada
+  imagenes.sort(customSort);
 
-<div id='todoPproduct'>
-
-  
-<h1>Productos</h1> 
-
-
-
-<p>Cantidad de productos disponibles: <strong>{imagenes.length}</strong></p>
-<hr></hr>
-<p>Ordenar por:</p>
-<select className="form-select" aria-label="Default select example" style={{
-width:'30%'
-}}>
-  <option value="2">Nombre, A a Z</option>
-  <option value="3">Nombre, Z a A</option>
-  <option value='4'>Precio:de mas bajo a mas alto</option>
-  <option value="1">Precio:de mas alto al mas bajo</option>
-</select>
-
-{imagenes.map((e,i)=>
-{
-return (
-<div key={i}  id='com'>
- 
-    <div  style={{
-backgroundImage:'https://images.wallpapersden.com/image/download/rick-and-morty-in-outer-space_bGdrbmuUmZqaraWkpJRmbmdlrWZlbWU.jpg'
-}}>
-     <div className="card">
-      <div className="info">
-       <div className="name">Product name</div>
-        <div className="bio">
-  
-<p>producto muy bueno hecho en china</p>
-
-        </div>
-      <div>
-    </div>
-   </div>
-    <div className="photo" style={{
-      height: '100%',
-      width: '100%',
-      backgroundImage: `url('https://th.bing.com/th/id/OIP.JpxfI_qGMtg90sA6PXYieAHaEK?pid=ImgDet&rs=1')`,
-      backgroundRepeat: 'no-repeat',
-          position: 'absolute',
-      backgroundSize: '100% 100%',  
-      borderRadius: '10px',
-      transition: ' 0.7s'
-    }}>
-   </div>
+  return (
+    <div>
+      <div id='todoPproduct'>
+        <h1>Productos</h1>
+        <p>Cantidad de productos disponibles: <strong>{imagenes.length}</strong></p>
+        <hr></hr>
+        <p>Ordenar por:</p>
+        <select className="form-select" onChange={e => compareByName(e.target.value)} aria-label="Default select example" style={{
+          width: '30%'
+        }}>
+          <option value="Nombre, A a Z">Nombre, A a Z</option>
+          <option value="Nombre, Z a A">Nombre, Z a A</option>
+          <option value='Precio: de más bajo a más alto'>Precio: de más bajo a más alto</option>
+          <option value="Precio: de más alto al más bajo">Precio: de más alto al más bajo</option>
+        </select>
+        {imagenes.map((e, i) => {
+          return (
+            <div key={i} id='com'>
+              <div>
+                <div className="card">
+                  <div className="info">
+                    <div className="name">{e.nombre}</div>
+                    <div className="bio">
+                      <hr/>
+                      <p>{e.Descripcion}</p>
+                    </div>
+                    <div>
+                    </div>
+                  </div>
+                  <div className="photo" style={{
+                    height: '100%',
+                    width: '100%',
+                    backgroundImage: `url('${e.Imagen}')`,
+                    backgroundRepeat: 'no-repeat',
+                    position: 'absolute',
+                    backgroundSize: '100% 100%',
+                    borderRadius: '10px',
+                    transition: '0.7s'
+                  }}>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )
+        })}
+      </div>
    
-</div>
-
-</div>
-</div>
-)
-})}
-</div>
-
-<div style={{position:'relative',top:'-3350px' }}>
-<CategoriaProduct/>
-</div>
-
-</div>
+    </div>
   );
 }
