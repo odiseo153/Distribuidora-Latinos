@@ -42,10 +42,6 @@ export function ProductCatalog({ preview = false }: ProductCatalogProps) {
       <div className={preview ? "page-shell" : "page-shell"}>
         <div className="flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/75 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground">
-              <Store className="size-4 text-primary" />
-              Catálogo visual
-            </span>
             <h2 className="mt-5 text-4xl font-semibold text-foreground md:text-5xl">
               Productos listos para explorar por categoría
             </h2>
@@ -152,30 +148,24 @@ export function ProductCatalog({ preview = false }: ProductCatalogProps) {
                       </span>
                     </div>
 
-                    <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                      <Button className="flex-1">
-                        <a
-                          href={waLink(
-                            `Hola, quiero pedir este producto: ${product.name} por RD$${product.price}.`,
-                          )}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <MessageCircle data-icon="inline-start" />
-                        </a>
-                        Pedir ahora
-                      </Button>
-                      <Button variant="outline" className="flex-1">
-                        <a
-                          href={waLink(
-                            `Hola, quisiera confirmar disponibilidad de ${product.name}.`,
-                          )}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Consultar
-                        </a>
-                      </Button>
+                    <div className="mt-5 flex flex-col gap-3 sm:flex-row w-50%">
+                      <a
+                        href={waLink(
+                          `Hola, quisiera confirmar disponibilidad de ${product.name}.`,
+                        )}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-green-400 inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-green-500 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-400 focus-visible:ring-offset-2"
+                      >
+                        <img
+                          width={28}
+                          height={28}
+                          src="images/whatsapp.png"
+                          alt=""
+                          className="rounded-2xl"
+                        />
+                        Consultar
+                      </a>
                     </div>
                   </div>
                 </article>

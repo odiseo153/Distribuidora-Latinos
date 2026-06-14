@@ -14,8 +14,8 @@ export default function ProductsPage() {
           <Button variant="outline">
             <Link href="/">
               <ArrowLeft data-icon="inline-start" />
-              Volver al inicio
             </Link>
+            Volver al inicio
           </Button>
         </div>
         <ProductCatalog />
