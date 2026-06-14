@@ -163,7 +163,7 @@ const productSeeds: Record<
       description: "Buen sabor y textura para sofrítos completos.",
     },
     {
-      name: "Lechuga crespa",
+      name: "Lechuga",
       price: 65,
       description: "Crujiente y fresca para ensaladas rápidas.",
     },
@@ -173,7 +173,7 @@ const productSeeds: Record<
       description: "Ideal para sopas, ensaladas y loncheras.",
     },
     {
-      name: "Papa lavada",
+      name: "Papa",
       price: 50,
       description: "Lista para freír, hervir u hornear.",
     },
@@ -220,27 +220,12 @@ const productSeeds: Record<
       description: "Jugosos y prácticos para guisos y frituras.",
     },
     {
-      name: "Pechuga deshuesada",
-      price: 205,
-      description: "Opción limpia para recetas ligeras.",
-    },
-    {
-      name: "Alitas de pollo",
-      price: 88,
-      description: "Buenas para reuniones, frituras o salsas.",
-    },
-    {
       name: "Longaniza fresca",
       price: 135,
       description: "Sabor intenso para desayuno o picadera.",
     },
   ],
   embutidos: [
-    {
-      name: "Jamón cocido",
-      price: 85,
-      description: "Suave y práctico para sándwiches y meriendas.",
-    },
     {
       name: "Salami especial",
       price: 92,
@@ -251,45 +236,10 @@ const productSeeds: Record<
       price: 115,
       description: "Fácil de usar en sandwiches y tostas.",
     },
-    {
-      name: "Salchichas jumbo",
-      price: 125,
-      description: "Rápidas de preparar y rendidoras.",
-    },
-    {
-      name: "Pechuga de pavo",
-      price: 145,
-      description: "Alternativa ligera para meriendas o wraps.",
-    },
-    {
-      name: "Mortadela",
-      price: 74,
-      description: "Ideal para picar o resolver la cena.",
-    },
-    {
-      name: "Queso de freír",
-      price: 165,
-      description: "Básico dominicano para desayuno o cena.",
-    },
-    {
-      name: "Tocineta",
-      price: 155,
-      description: "Aporta sabor en desayunos y pastas.",
-    },
-    {
-      name: "Jamón picnic",
-      price: 68,
-      description: "Buen rendimiento para sándwiches familiares.",
-    },
-    {
-      name: "Chorizo parrillero",
-      price: 172,
-      description: "Perfecto para picadera y fines de semana.",
-    },
   ],
   bebidas: [
     {
-      name: "Agua purificada 1.5 L",
+      name: "Agua Planeta",
       price: 35,
       description: "Hidratación diaria para casa o trabajo.",
     },
@@ -304,11 +254,6 @@ const productSeeds: Record<
       description: "Sabor fresco para desayunos y meriendas.",
     },
     {
-      name: "Bebida de avena",
-      price: 88,
-      description: "Opción práctica para desayunar rápido.",
-    },
-    {
       name: "Malta",
       price: 55,
       description: "Una favorita para cualquier momento del día.",
@@ -319,24 +264,9 @@ const productSeeds: Record<
       description: "Refrescante y ligera para acompañar comidas.",
     },
     {
-      name: "Té frío limón",
-      price: 58,
-      description: "Toque cítrico y refrescante para la tarde.",
-    },
-    {
-      name: "Energizante",
+      name: "Vive 100",
       price: 95,
       description: "Ideal para días largos o jornadas activas.",
-    },
-    {
-      name: "Chocolate listo para beber",
-      price: 72,
-      description: "Merienda rápida para grandes y chicos.",
-    },
-    {
-      name: "Jugo de frutas tropicales",
-      price: 90,
-      description: "Sabor dulce para acompañar el almuerzo.",
     },
   ],
   limpieza: [
@@ -470,14 +400,13 @@ const productImagesByName: Record<string, string> = {
     "https://images.unsplash.com/photo-1642372849465-ad4afb304542?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
   "Cebolla roja":
     "https://www.gastronomiavasca.net/uploads/image/file/3338/cebolla_roja.jpg",
-  "Lechuga crespa":
-    "https://images.unsplash.com/photo-1642372849465-ad4afb304542?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+  Lechuga:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj726Yp7Dx7-O-DM6w3nUuKY0OEM0gGvTA4g&s",
   Zanahoria:
-    "https://images.unsplash.com/photo-1642372849465-ad4afb304542?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  "Papa lavada":
-    "https://images.unsplash.com/photo-1642372849465-ad4afb304542?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://verduras.consumer.es/sites/verduras/files/styles/pagina_cabecera_desktop/public/2025-05/zanahoria_0.webp?h=1e66e246&itok=ekbnPp6C",
+  Papa: "https://www.herbazest.com/imgs/0/a/c/451775/papa.jpg",
   "Ajo criollo":
-    "https://images.unsplash.com/photo-1642372849465-ad4afb304542?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKDUwzRwgXn-eC2L1SukKzCTSX7N-nahpOGA&s",
   "Pepino verde":
     "https://www.recetasnestlecam.com/sites/default/files/2022-04/que-es-el-pepino.jpg",
   Repollo:
@@ -499,80 +428,66 @@ const productImagesByName: Record<string, string> = {
     "https://d3d4s9jdu9j4x0.cloudfront.net/wp-content/uploads/2021/09/20164932/Salamito-0.75Lb-Super-Especial-1lb.png",
   "Queso amarillo lonjeado":
     "https://thumbs.dreamstime.com/b/mont%C3%B3n-de-lonchas-queso-amarillo-cremoso-sobre-un-plato-madera-perfecto-para-blogs-comida-sitios-recetas-o-men%C3%BAs-restaurantes-424576913.jpg",
-  "Salchichas jumbo":
-    "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
-  "Pechuga de pavo":
-    "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
-  Mortadela:
-    "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
   "Queso de freir":
     "https://images.unsplash.com/photo-1620567721632-c5e257b4dcef?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  Tocineta:
-    "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
   "Jamon picnic":
     "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
   "Chorizo parrillero":
     "https://media.istockphoto.com/id/2249653110/photo/sausages-grilled-on-the-barbecue-grill.webp?a=1&b=1&c=eXN_AW8rIc8e7A0GeSxLELk0_3vh4LCX5jiRnx_rYVs%3D&k=20&s=612x612&w=0",
-  "Agua purificada 1.5 L":
-    "https://images.unsplash.com/photo-1561041695-d2fadf9f318c?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym90dGxlZCUyMHdhdGVyfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+  "Agua Planeta":
+    "https://farmaciasloshidalgos.com.do/wp-content/uploads/2023/10/017069.png",
   "Refresco cola 2 L":
-    "https://plus.unsplash.com/premium_photo-1667543228378-ec4478ab2845?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://gruporamos.vtexassets.com/arquivos/ids/160255-800-800?v=639090402163670000&width=800&height=800&aspect=true",
   "Jugo de naranja":
-    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  "Bebida de avena":
-    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  Malta:
-    "https://plus.unsplash.com/premium_photo-1667543228378-ec4478ab2845?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://www.gruporica.com/wp-content/uploads/2021/03/jugo-100-sin-azucar2-1024x504-new2.png",
+
+  Malta: "https://cdn.almacen.do/2022/03/Malta-India-12-oz-Front-600x600.jpg",
   "Agua con gas":
-    "https://images.unsplash.com/photo-1561041695-d2fadf9f318c?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Ym90dGxlZCUyMHdhdGVyfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://d31f1ehqijlcua.cloudfront.net/n/4/5/d/f/45dfe033ed8c48d8c7edb38249fe9730f29cd7d2_Water_486796_01.jpg",
   "Te frio limon":
     "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  Energizante:
-    "https://plus.unsplash.com/premium_photo-1667543228378-ec4478ab2845?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  "Chocolate listo para beber":
-    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  "Jugo de frutas tropicales":
-    "https://images.unsplash.com/photo-1600271886742-f049cd451bba?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwanVpY2V8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+  "Vive 100":
+    "https://d31f1ehqijlcua.cloudfront.net/n/a/b/8/2/ab8205f370adca2bd6afa64b0afd326f931fa53f_Beverage_510021_01.jpg",
   "Detergente en polvo":
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0PoA-oQypUTKL4cYA_F-RHiwqFmS8Z2GJew&s",
   "Cloro multiusos":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://kywiec.vtexassets.com/arquivos/ids/156721/471585.jpg?v=638380020034400000",
   "Suavizante floral":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+  "https://img.plazalama.com.do/cdn-cgi/imagedelivery/sGmYOLqUIPM1LW64nOGaRw/a1572324-4c1f-4009-2a91-4113f562f600/base",
   "Jabon de fregar":
     "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
   Desinfectante:
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://www.tuhogar.com/adobe/dynamicmedia/deliver/dm-aid--9cc34a0a-7851-4990-a9bd-593291aa984e/fabuloso-desinfectante-2l.png?quality=85&preferwebp=true",
   "Esponjas pack":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4rhOhJ9EDDOz6YAQDOVEwu5JbXmj8I47Lg&s",
   "Papel toalla":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://static.compreloadomicilio.com/supermercadoisaric/products/01740/604fe3ff00188091776219.webp",
   "Fundas de basura":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://www.suplidorarenma.com/cdn/shop/products/fundas55galon_c6cf67e2-ab85-4668-8306-5ec83a89b37b_1024x.jpg?v=1633558164",
   "Limpiador de piso":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTiBh1TiwkgTjisqJa_fpZNRgnfe0MB2W7w&s",
   "Guantes de limpieza":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://ferremix.com.do/cdn/shop/files/T23260.jpg?v=1754320678",
   "Velas de emergencia":
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2Vob2xkJTIwaXRlbXN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  Fosforos:
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2Vob2xkJTIwaXRlbXN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://m.media-amazon.com/images/I/31DuEwSRMsL._AC_UF894,1000_QL80_.jpg",
+  "Fósforos":
+    "https://tienda.farmaciacarol.com/Images/Products/21097959.jpg",
   "Servilletas pack":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://d31f1ehqijlcua.cloudfront.net/n/4/a/a/9/4aa98f40db126d46f6a3ede37871d8ea124d822b_paper_331180_01.jpg",
   "Vasos desechables":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://vocatus.com.do/web/image/product.template/14318/image_1024?unique=f2d0495",
   "Platos desechables":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
-  "Papel higienico 4 rollos":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://m.media-amazon.com/images/I/71LIN++lfiL._AC_UF894,1000_QL80_.jpg",
+  "Papel higiénico 4 rollos":
+    "https://gruporamos.vtexassets.com/arquivos/ids/167237/1-und-7462381391475.jpg?v=639116988043930000",
   "Pilas AA":
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2Vob2xkJTIwaXRlbXN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://cdn.almacen.do/2020/12/BateriCC81a-Alcalinas-Duracell-AA_-4-uds-Front.jpg",
   Encendedor:
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2Vob2xkJTIwaXRlbXN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
-  "Toallitas humedas":
-    "https://images.unsplash.com/photo-1550505393-2c5dbec5de87?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhvdXNlaG9sZCUyMGl0ZW1zfGVufDB8fDB8fHww&ixlib=rb-4.1.0&q=60&w=3000",
-  "Aluminio domestico":
-    "https://images.unsplash.com/photo-1489274495757-95c7c837b101?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aG91c2Vob2xkJTIwaXRlbXN8ZW58MHx8MHx8fDA%3D&ixlib=rb-4.1.0&q=60&w=3000",
+    "https://walmartsv.vtexassets.com/arquivos/ids/696488-800-450?v=638764885840100000&width=800&height=450&aspect=true",
+  "Toallitas húmedas":
+    "https://bebemundo.com.do/media/catalog/product/cache/fde49a4ea9a339628caa0bc56aea00ff/2/0/2080597-1.png",
+  "Aluminio doméstico":
+    "https://http2.mlstatic.com/D_NQ_NP_977865-CBT96611204260_112025-O.webp",
 };
 
 export const products: Product[] = Object.entries(productSeeds).flatMap(
